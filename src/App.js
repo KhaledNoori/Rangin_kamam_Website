@@ -1,25 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import './components/Header/Navbar';
+import MyNaver from "./components/Header/Navbar";
 
-// import Header from "./components/Header/Header";
-// import Home from "./pages/Home/Home";
-// import About from "./pages/About/About";
-// import Books from "./pages/Books/Books";
-import BookPage from "./pages/BookPage/BookPage";
-// import Footer from "./components/Footer/Footer";
-import Layout from "./pages/Layout/Layout";
+
+
 
 const App = () => {
-  return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path="/" Component={Layout} exact />
-          <Route path="/book/:id" Component={BookPage} />
-        </Routes>
-      </Router>
-    </div>
-  );
-};
+ 
+  return(
+   <div>
+    <MyNaver/>
+   </div>
+  )
+    
+  
+}
 
 export default App;

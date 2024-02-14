@@ -1,19 +1,23 @@
 import React from "react";
-import './components/Header/Navbar';
-import MyNaver from "./components/Header/Navbar";
+// import { Route, BrowserRouter as router,Router,Routes } from "react-router-dom";
 
-
+import Layout from "./pages/Layouts/Layout";
 
 
 const App = () => {
  
   return(
    <div>
-    <MyNaver/>
+    {/* <Router>
+      <Routes>
+        <Route path="/"Component={Layout} exact />
+      </Routes>
+    </Router> */}
+
+    <Layout />
    </div>
   )
     
-  
 }
 
 export default App;

@@ -1,36 +1,37 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import logo from './logo.png'; // فایل عکس لوگو
-import './Navbar.css';
+import React from "react";
+
+import { Container, Navbar, Nav, } from "react-bootstrap";
+
+import './Navbar.css'; 
+
 const MyNavbar = () => {
-  const [showNavItems, setShowNavItems] = useState(false);
-
-  const toggleNavItems = () => {
-    setShowNavItems(!showNavItems);
-  };
-
   return (
-    <Navbar expand="lg" className="shadow-lg">
+    <Navbar collapseOnSelect expand="lg" className="nav-bg fixed-top">
       <Container>
-        <Navbar.Brand href="#">
-          <img src="src/components/Header/logo.png." alt="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={toggleNavItems}>
-          <i className="fas fa-bars"></i>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav" className={showNavItems ? 'show' : ''}>
-          <Nav className="ml-auto" dir='rtl'>
-            <Nav.Link href="#">صفحه اصلی</Nav.Link>
-            <Nav.Link href="#">درباره ما</Nav.Link>
-            <Nav.Link href="#">دیدگاه</Nav.Link>
-            <Nav.Link href="#">محصولات</Nav.Link>
-            <Nav.Link href="#">اخبار</Nav.Link>
-            <Nav.Link href="#">تماس با ما</Nav.Link>
+        <Navbar.Brand href="#home" className="navBrand"> 
+        <img src="./assets/images/logo.png" 
+         width="50"
+         height="50"
+         className="d-inline-block align-center"
+         alt="لوگو"/>
+          </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+
+          <Nav className="mx-auto" ></Nav>
+          <Nav dir="rtl">
+          <Nav.Link href="#home" className="link">صفحه اصلی</Nav.Link>
+          <Nav.Link href="#about us" className="link">در باره ما</Nav.Link>
+            <Nav.Link href="#vision" className="link"> دیدگاه </Nav.Link>
+            <Nav.Link  href="#products" className="link" >  محصولات </Nav.Link>
+            <Nav.Link  href="#new" className="link"> اخبار </Nav.Link>
+            <Nav.Link  href="#contact" className="link"> تماس باما  </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 };
+
 
 export default MyNavbar;

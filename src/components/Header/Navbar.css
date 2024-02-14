@@ -11,10 +11,21 @@
   @media (max-width: 991px) {
     .navbar {
         background-image: linear-gradient(254deg, #0072ff, #00c6ff);
+       
     }
   }
 
-  .nav-item{
 
-    color: yellow;
+  .link:hover {
+    color: whitesmoke !important;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transition: all 500ms ease-out;
   }
+
+  @media only screen and (max-width: 540px) {
+    .link:hover{
+      color: rgb(245, 7, 7) !important;
+    
+      transition: none;
+    }
+    }

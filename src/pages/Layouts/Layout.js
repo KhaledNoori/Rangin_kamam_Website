@@ -5,7 +5,7 @@ function Layout() {
   return (
     <div>
       <MyNavbar />
-   <Home />
+       <Home />
     </div>
   );
 }

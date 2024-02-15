@@ -1,12 +1,12 @@
 import React from "react";
-
 import { Container, Navbar, Nav, } from "react-bootstrap";
 
 import './Navbar.css'; 
 
 const MyNavbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="nav-bg fixed-top">
+    <header >
+      <Navbar collapseOnSelect expand="lg" className="nav-bg fixed-top">
       <Container>
         <Navbar.Brand href="#home" className="navBrand"> 
         <img src="./assets/images/logo.png" 
@@ -30,6 +30,7 @@ const MyNavbar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </header>
   );
 };
 

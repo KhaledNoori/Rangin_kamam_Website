@@ -4,10 +4,10 @@ import './Home.css';
 const Home = () => {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
-  const colors = ['#ff8c00', '#ff0080']; // رنگ‌های Gradient
+  
 
   useEffect(() => {
-    const textToType = "شرکت تولیدی رنگ رنگین کمان";
+    const textToType = "شرکت تولیدی رنگ رنگین کمان" ;
     
     const timer = setInterval(() => {
       if (index < textToType.length) {
@@ -16,7 +16,7 @@ const Home = () => {
       } else {
         clearInterval(timer);
         setTimeout(() => {
-          setText('');
+          setText(' ');
           setIndex(0);
         }, 3000); // تایمر برای حذف متن پس از 3 ثانیه
       }
@@ -26,20 +26,24 @@ const Home = () => {
   }, [index]);
 
   return (
-    <div className='homeContainer d-flex align-itemes-center justify-content-center id="home'>
+   
+      <section  className='home d-flex align-itemes-center justify-content-center id="home" '>
       <Container>
-        <Row className='gy-5'>
-         
-          <Col lg={6} className='d-flex align-itemes-center justify-content-center column1'>
-            <img src="./assets/images/photo-1513364776144-60967b0f800f.webp" alt="Rainbow Company" />
+        <Row className='gy-5 roo align-itemes-center ' dir='rtl'> 
+          <Col lg={6}  
+            className='d-flex justify-content-center '>
+            <img src="./assets/images/photo-1513364776144-60967b0f800f.webp" alt="Rainbow Company" className='column1'/>
           </Col>
 
-          <Col lg={6} className='text-center column2'>
-           <p className='para'> {text}</p>
+          <Col lg={6}  className='text-center column2'>
+           <h1 className='para' >
+         {text}</h1>
+            <div className="gradient-text "> <h3>ما از جهان محافظت می کنیم و زیبا می کنیم</h3></div>
            </Col>
         </Row>
       </Container>
-    </div>
+      </section>
+    
   );
 };
 

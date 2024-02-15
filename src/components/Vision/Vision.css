@@ -1,0 +1,29 @@
+.Vision{
+    background-image: url('/public/assets/images/vision/istockphoto-453963885-612x612.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+.card2{
+    height: 400px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+.Vision .card2 p{
+    padding: 70px 30px 30px 30px;
+    font-size: 23px;
+    font-weight: 400px;
+    font-style: oblique;
+    line-height: 50px;
+    justify-content: center;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.img1{
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+}

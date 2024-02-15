@@ -9,7 +9,7 @@ const MyNavbar = () => {
       <Navbar collapseOnSelect expand="lg" className="nav-bg fixed-top">
       <Container>
         <Navbar.Brand href="#home" className="navBrand"> 
-        <img src="./assets/images/logo.png" 
+        <img src="./assets/images/logo/logo.png" 
          width="50"
          height="50"
          className="d-inline-block align-center"

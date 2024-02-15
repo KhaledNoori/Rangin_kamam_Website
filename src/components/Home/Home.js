@@ -27,12 +27,12 @@ const Home = () => {
 
   return (
    
-      <section  className='home d-flex align-itemes-center justify-content-center id="home" '>
+      <section  className='home d-flex align-itemes-center justify-content-center ' id='home'>
       <Container>
-        <Row className='gy-5 roo align-itemes-center ' dir='rtl'> 
+        <Row className='gy-5 roo align-itemes-center ' > 
           <Col lg={6}  
             className='d-flex justify-content-center '>
-            <img src="./assets/images/photo-1513364776144-60967b0f800f.webp" alt="Rainbow Company" className='column1'/>
+            <img src="./assets/images/home/photo-1513364776144-60967b0f800f.webp" alt="Rainbow Company" className='column1'/>
           </Col>
 
           <Col lg={6}  className='text-center column2'>

@@ -24,7 +24,7 @@ const MyNavbar = () => {
           <Nav.Link href="#about us" className="link">در باره ما</Nav.Link>
             <Nav.Link href="#vision" className="link"> دیدگاه </Nav.Link>
             <Nav.Link  href="#products" className="link" >  محصولات </Nav.Link>
-            <Nav.Link  href="#new" className="link"> اخبار </Nav.Link>
+            <Nav.Link  href="#news" className="link"> اخبار </Nav.Link>
             <Nav.Link  href="#contact" className="link"> تماس باما  </Nav.Link>
           </Nav>
         </Navbar.Collapse>

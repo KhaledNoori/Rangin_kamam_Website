@@ -6,7 +6,7 @@ const Vision = () => {
 
     return(
         <section className="Vision d-flex align-itemes-center justify-content-center" id="vision">
-    <Container className=" my-3">
+    <Container className=" mb-3 count">
      <Row className=" text-center justify-contant-center fw-bold" > 
      <h2 className="mt-4">دیدگاه</h2>
       </Row>

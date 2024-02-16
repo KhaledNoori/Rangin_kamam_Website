@@ -7,7 +7,10 @@
     width: 100%;
     background-image: linear-gradient(254deg, #0072ff, #00c6ff);
     position: fixed;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
+
   
   @media (max-width: 991px) {
     .navbar {
@@ -16,7 +19,7 @@
     }
   }
 
-
+x
   .link:hover {
     color: whitesmoke !important;
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;

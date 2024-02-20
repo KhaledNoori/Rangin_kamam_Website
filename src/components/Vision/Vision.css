@@ -1,3 +1,17 @@
+
+@font-face {
+    font-family: "Vazir";
+    src: url("/public/assets/fonts/Vazir.eot");
+    /* IE9 Compat Modes */
+    src: url("/public/assets/fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+      url("/public/assets/fonts/Vazir.woff2") format("woff2"),
+      url("/public/assets/fonts/Vazir.woff") format("woff"),
+      url("/public/assets/fonts/Vazir.ttf") format("truetype");
+    /* Safari, Android, iOS */
+  }
+
+
+
 .Vision{
     background-image: url('/public/assets/images/vision/istockphoto-453963885-612x612.jpg');
     background-repeat: no-repeat;
@@ -19,11 +33,11 @@
     padding: 70px 30px 30px 30px;
     font-size: 23px;
     font-weight: 400px;
-    font-style: oblique;
+    /* font-style: oblique; */
     line-height: 50px;
     justify-content: center;
     padding-left: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Vazir';
     
 }
 .img1{

@@ -11,7 +11,7 @@ const News = () => {
           <path d="M0.00,50.10 C150.00,150.33 271.29,-50.10 500.00,50.10 L500.00,0.00 L0.00,0.00 Z" style={{ stroke: "none", fill: "#0072ff" }}></path></svg></div>
       <Container>
         <Row className="text-center mb-3">
-          <h2>اخبار</h2>
+          <h2 className="text">اخبار</h2>
         </Row>
         <Row>
           <Col>
@@ -24,8 +24,8 @@ const News = () => {
                     style={{ height: "50", width: "300" }}
                   />
                   <Card.Body className="text-center">
-                  <Card.Title>محصول جدید رنگ رغنی شرکت رنگین کمان</Card.Title>
-                    <Card.Text>
+                  <Card.Title className="text">محصول جدید رنگ رغنی شرکت رنگین کمان</Card.Title>
+                    <Card.Text className="text">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و   
                     </Card.Text>
                   </Card.Body>
@@ -39,8 +39,8 @@ const News = () => {
                     style={{ height: "50", width: "300" }}
                   />
                   <Card.Body className="text-center">
-                  <Card.Title>محصول جدید رنگ ورزین شرکت رنگین کمان</Card.Title>
-                    <Card.Text>
+                  <Card.Title className="text">محصول جدید رنگ ورزین شرکت رنگین کمان</Card.Title>
+                    <Card.Text className="text">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
                     </Card.Text>
                   </Card.Body>
@@ -54,8 +54,8 @@ const News = () => {
                     style={{ height: "50", width: "300" }}
                   />
                   <Card.Body className="text-center">
-                    <Card.Title>محصول جدید رنگ رغنی شرکت رنگین کمان</Card.Title>
-                    <Card.Text>
+                    <Card.Title className="text">محصول جدید رنگ رغنی شرکت رنگین کمان</Card.Title>
+                    <Card.Text className="text">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
                     </Card.Text>
                   </Card.Body>
@@ -69,8 +69,8 @@ const News = () => {
                     style={{ height: "50", width: "300" }}
                   />
                   <Card.Body className="text-center">
-                  <Card.Title>محصول جدید رنگ ورزین شرکت رنگین کمان</Card.Title>
-                    <Card.Text>
+                  <Card.Title className="text">محصول جدید رنگ ورزین شرکت رنگین کمان</Card.Title>
+                    <Card.Text className="text  text-right">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
                     </Card.Text>
                   </Card.Body>

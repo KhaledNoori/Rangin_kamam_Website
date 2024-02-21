@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "Vazir";
     src: url("/public/assets/fonts/Vazir.eot");
@@ -9,13 +8,3 @@
       url("/public/assets/fonts/Vazir.ttf") format("truetype");
     /* Safari, Android, iOS */
   }
-
-.product{
-
-    background:linear-gradient(254deg, #0072ff, #00c6ff);
-}
-
-.fonttt{
-
-    font-family: "Vazir";
-}

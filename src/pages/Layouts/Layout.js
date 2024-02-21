@@ -23,4 +23,3 @@ function Layout() {
 
 export default Layout;
 
-// images={images} 

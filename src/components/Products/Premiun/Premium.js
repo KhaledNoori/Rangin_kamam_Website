@@ -11,7 +11,7 @@ const Premium = () => {
          <Row className=' text-center align-items-center mt-5 '>
 
             <Col >
-               <h3 className='fonttt'> رنگ ممتاز</h3>
+               <h2 className='fonttt'> رنگ ممتاز</h2>
             </Col>
          </Row>
 

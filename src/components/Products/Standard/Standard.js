@@ -10,7 +10,7 @@ const Standard= () => {
     <Row className=' text-center align-items-center mt-5 '>
 
         <Col >
-        <h3 className='fonttt'> رنگ درجه یک</h3>
+        <h2 className='fonttt'> رنگ درجه یک</h2>
         </Col>
     </Row>
    

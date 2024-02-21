@@ -1,26 +1,28 @@
-
 @font-face {
     font-family: "Vazir";
     src: url("/public/assets/fonts/Vazir.eot");
-   
+    /* IE9 Compat Modes */
     src: url("/public/assets/fonts/Vazir.eot?#iefix") format("embedded-opentype"),
       url("/public/assets/fonts/Vazir.woff2") format("woff2"),
       url("/public/assets/fonts/Vazir.woff") format("woff"),
       url("/public/assets/fonts/Vazir.ttf") format("truetype");
-    
+    /* Safari, Android, iOS */
   }
 
+  .contact{
 
-
-  .section1{
-    background-image: url('/public/assets/images/Products/back.jpg.jpg');
+    background-image: url('/public/assets/images/contactus/head1.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
 
-     }
+  }
 
-.fonttt{
-  font-family: "Vazir";
-}
+  .lab{
+
+    font-family: "Vazir";
+    font-size: 18px;
+    color: whitesmoke;
+    
+  }

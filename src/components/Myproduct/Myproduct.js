@@ -1,35 +1,34 @@
 import React from "react";
 import Premium from "../Products/Premiun/Premium";
-import {Row , Col} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import './Myproduct.css';
 import Standard from "../Products/Standard/Standard";
+import Basic from "../Products/Basic/Basic";
 
-function Myproduct (){
 
-    return(
+function Myproduct() {
 
-<section className="section1" id="products">
-<Row className=' text-center align-items-center pt-3 product'>
+    return (
 
-<Col className='' >
-<h3 className="fonttt">محصولات</h3>
-</Col>
-</Row>
-<Premium />
-<Standard />
+        <section className="section1" id="products">
+            <Row className=' text-center align-items-center pt-3 product'>
 
-<div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+                <Col className='' >
+                    <h3 className="fonttt">محصولات</h3>
+                </Col>
+            </Row>
+            <Premium />
+            <Standard />
+            <Basic />
 
-      <br/>
-</div>
-</section>
+
+            <div>
+                <br />
+                <br />
+                <br />
+              
+            </div>
+        </section>
     )
 }
 

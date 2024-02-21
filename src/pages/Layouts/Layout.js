@@ -6,20 +6,23 @@ import Vision from "../../components/Vision/Vision";
 import Footer from "../../components/Footer/Footer";
 import News from "../../components/News/News";
 import Myproduct from "../../components/Myproduct/Myproduct";
+import ContactUs from "../../components/Contact-us/ContactUs";
 
 function Layout() {
   return (
     <div>
       <MyNavbar />
-       <Home />
-       <About />
-       <Vision />
-    <Myproduct />
-       <News />
-       <Footer />
+      <Home />
+      <About />
+      <Vision />
+      <Myproduct />
+      <News />
+
+    
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
 
 export default Layout;
-

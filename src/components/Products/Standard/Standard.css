@@ -8,3 +8,7 @@
       url("/public/assets/fonts/Vazir.ttf") format("truetype");
     /* Safari, Android, iOS */
   }
+  .fonttt{
+
+    font-family: "Vazir";
+  }

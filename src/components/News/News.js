@@ -24,7 +24,7 @@ const News = () => {
                     style={{ height: "50", width: "300" }}
                   />
                   <Card.Body className="text-center">
-                  <Card.Title className="text">محصول جدید رنگ رغنی شرکت رنگین کمان</Card.Title>
+                  <Card.Title className="text">محصول  رنگ رغنی شرکت رنگین کمان</Card.Title>
                     <Card.Text className="text">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و   
                     </Card.Text>
@@ -39,7 +39,7 @@ const News = () => {
                     style={{ height: "50", width: "300" }}
                   />
                   <Card.Body className="text-center">
-                  <Card.Title className="text">محصول جدید رنگ ورزین شرکت رنگین کمان</Card.Title>
+                  <Card.Title className="text">محصول  رنگ ورزین شرکت رنگین کمان</Card.Title>
                     <Card.Text className="text">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
                     </Card.Text>
@@ -54,7 +54,7 @@ const News = () => {
                     style={{ height: "50", width: "300" }}
                   />
                   <Card.Body className="text-center">
-                    <Card.Title className="text">محصول جدید رنگ رغنی شرکت رنگین کمان</Card.Title>
+                    <Card.Title className="text">محصول رنگ رغنی شرکت رنگین کمان</Card.Title>
                     <Card.Text className="text">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
                     </Card.Text>
@@ -69,7 +69,7 @@ const News = () => {
                     style={{ height: "50", width: "300" }}
                   />
                   <Card.Body className="text-center">
-                  <Card.Title className="text">محصول جدید رنگ ورزین شرکت رنگین کمان</Card.Title>
+                  <Card.Title className="text">محصول رنگ ورزین شرکت رنگین کمان</Card.Title>
                     <Card.Text className="text  text-right">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
                     </Card.Text>

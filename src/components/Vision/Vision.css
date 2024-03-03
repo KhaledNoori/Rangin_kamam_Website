@@ -1,35 +1,35 @@
-
 @font-face {
     font-family: "Vazir";
     src: url("/public/assets/fonts/Vazir.eot");
     /* IE9 Compat Modes */
     src: url("/public/assets/fonts/Vazir.eot?#iefix") format("embedded-opentype"),
-      url("/public/assets/fonts/Vazir.woff2") format("woff2"),
-      url("/public/assets/fonts/Vazir.woff") format("woff"),
-      url("/public/assets/fonts/Vazir.ttf") format("truetype");
+        url("/public/assets/fonts/Vazir.woff2") format("woff2"),
+        url("/public/assets/fonts/Vazir.woff") format("woff"),
+        url("/public/assets/fonts/Vazir.ttf") format("truetype");
     /* Safari, Android, iOS */
-  }
+}
 
-
-
-.Vision{
+.Vision {
     background-image: url('/public/assets/images/vision/istockphoto-453963885-612x612.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
 
 }
- .section .count{
+
+.section .count {
 
     margin-bottom: 120px;
 }
-.card2{
+
+.card2 {
     height: 400px;
     width: 100%;
     background-color: antiquewhite;
     border-radius: 15px;
 }
-.Vision .card2 p{
+
+.Vision .card2 p {
     padding: 70px 30px 30px 30px;
     font-size: 23px;
     font-weight: 400px;
@@ -38,9 +38,10 @@
     justify-content: center;
     padding-left: 15px;
     font-family: 'Vazir';
-    
+
 }
-.img1{
+
+.img1 {
     height: 400px;
     width: 100%;
     border-radius: 10px;

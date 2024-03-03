@@ -1,29 +1,24 @@
-
-
-
-.footer{  height: 150px;
+.footer {
+    height: 150px;
     width: 100%;
-       
-       background-image:
-        linear-gradient(254deg, #0072ff, #00c6ff) ;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-    
-    }
 
+    background-image:
+        linear-gradient(254deg, #0072ff, #00c6ff);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 
-.linkf{
+}
 
-    
-    text-decoration:none;
+.linkf {
+    text-decoration: none;
     color: black;
 }
 
-.item2{
+.item2 {
 
     margin: 5px;
     color: black;
     font-size: xx-large;
-    
+
     size: 130px;
 }

@@ -4,11 +4,11 @@ import './Home.css';
 const Home = () => {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
-  
+
 
   useEffect(() => {
-    const textToType = "شرکت تولیدی رنگ رنگین کمان" ;
-    
+    const textToType = "شرکت تولیدی رنگ رنگین کمان";
+
     const timer = setInterval(() => {
       if (index < textToType.length) {
         setText((prevText) => prevText + textToType[index]);
@@ -26,27 +26,27 @@ const Home = () => {
   }, [index]);
 
   return (
-   
-      <section  className='home d-flex align-itemes-center justify-content-center ' id='home'>
+
+    <section className='home d-flex align-itemes-center justify-content-center ' id='home'>
       <Container>
-        <Row className='gy-5  align-itemes-center mb-5' > 
-       
+        <Row className='gy-5  align-itemes-center mb-5' >
 
-          <Col lg={6}  className='text-center column2' dir='rtl'>
-           <h1 className='para' >
-         {text}</h1>
+
+          <Col lg={6} className='text-center column2' dir='rtl'>
+            <h1 className='para' >
+              {text}</h1>
             <div className="gradient-text "> <h3>ما از جهان محافظت می کنیم و زیبا می کنیم</h3></div>
-           </Col>
+          </Col>
 
-           <Col lg={6}  
+          <Col lg={6}
             className='d-flex justify-content-center '>
-            <img src="./assets/images/home/photo-1513364776144-60967b0f800f.webp" alt="Rainbow Company" className='column1'/>
+            <img src="./assets/images/home/photo-1513364776144-60967b0f800f.webp" alt="Rainbow Company" className='column1' />
           </Col>
         </Row>
 
       </Container>
-      </section>
-    
+    </section>
+
   );
 };
 

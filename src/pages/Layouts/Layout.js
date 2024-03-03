@@ -5,8 +5,8 @@ import About from "../../components/About/About";
 import Vision from "../../components/Vision/Vision";
 import Footer from "../../components/Footer/Footer";
 import News from "../../components/News/News";
-import Myproduct from "../../components/Myproduct/Myproduct";
 import ContactUs from "../../components/Contact-us/ContactUs";
+import Allproduct from "../../components/Myproduct/Allproduct";
 
 function Layout() {
   return (
@@ -15,10 +15,8 @@ function Layout() {
       <Home />
       <About />
       <Vision />
-      <Myproduct />
+      <Allproduct />
       <News />
-
-    
       <ContactUs />
       <Footer />
     </div>

@@ -1,40 +1,15 @@
-
-
 @font-face {
-    font-family: "Vazir";
-    src: url("/public/assets/fonts/Vazir.eot");
-    /* IE9 Compat Modes */
-    src: url("/public/assets/fonts/Vazir.eot?#iefix") format("embedded-opentype"),
-      url("/public/assets/fonts/Vazir.woff2") format("woff2"),
-      url("/public/assets/fonts/Vazir.woff") format("woff"),
-      url("/public/assets/fonts/Vazir.ttf") format("truetype");
-    /* Safari, Android, iOS */
-  }
-
-  .text{
-  
-    font-family: 'Vazir';
-  }
-/* .News{
-    background-image: url('/public/assets/images/news/joe-woods-4Zaq5xY5M_c-unsplash.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-} */
-
-/* .img{
-
-    height: 450px;
-    width: 600px;
+  font-family: "Vazir";
+  src: url("/public/assets/fonts/Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("/public/assets/fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("/public/assets/fonts/Vazir.woff2") format("woff2"),
+    url("/public/assets/fonts/Vazir.woff") format("woff"),
+    url("/public/assets/fonts/Vazir.ttf") format("truetype");
+  /* Safari, Android, iOS */
 }
-.cd{
 
-height: 80px;
-width: 500px;
-} */
+.text {
 
-/* .Carousel.Item img{
-    max-width: 600px;
-    max-height: 450px;
-} */
+  font-family: 'Vazir';
+}

@@ -1,75 +1,126 @@
 import React from "react";
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import { Container, Row, Col ,Form ,Button } from "react-bootstrap";
-import './ContactUs.css'
+import { Container, Row, Col, Button, Form} from "react-bootstrap";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import './ContactUs.css';
+// import { formToJSON } from "axios";
 const ContactUs = () => {
-    const mapStyles = {
-        height: "400px",
-        width: "100%"
-    };
+  const mapStyles = {
+    height: "400px",
+    width: "100%"
+  };
 
-    const defaultCenter = {
-        lat: 34.34899,
-        lng: 62.20112
-    };
+  const defaultCenter = {
+    lat: 34.34899,
+    lng: 62.20112
+  };
 
-    return (
+  // about form
 
-        <section className="contact" id="contact">
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_8p9li7p",
+        "template_9p4fx3j",
+        e.target,
+        "Phj6W0Xc1igo9lqXE"
+      )
+      .then((response) => {
+        console.log("Email successfully sent!", response);
+        // Display success message using SweetAlert
+        Swal.fire({
+          title: "موفقیت آمیز !",
+          text: "پیام شما موفقانه ارسال شد",
+          icon: "success",
+          confirmButtonText: "قبول",
+        });
+        // This command reset the form after submiting
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        //Error message.
+        // Display error message using SweetAlert
+        Swal.fire({
+          title: "خطا !",
+          text: "هنگام ارسال پیام به مشکل برخوردیم، لطفا دوباره امتحان کنید.",
+          icon: "error",
+          confirmButtonText: "قبول",
+        });
+      });
+  };
+  return (
 
-            <Container className="pb-5">
+    <section className="contact" id="contact">
 
-                <Row className=" text-center mt-5">
-                    <Col>
-                        <h2 className=" mt-3 text-light">
-                            ارتباط با ما
-                        </h2>
-                    </Col>
-                </Row>
+      <Container className="pb-5">
 
-                <Row className=" d-flex align-items-center justify-content-center mt-5" >
+        <Row className=" text-center mt-5">
+          <Col>
+            <h2 className=" mt-3 text-light">
+              ارتباط با ما
+            </h2>
+          </Col>
+        </Row>
 
-                    <Col lg={6} sm={4}>
-            
-                    <Form dir="rtl">
-      <Form.Group controlId="formBasicName">
-        <Form.Label className="lab">نام</Form.Label>
-        <Form.Control type="text" placeholder="نام خود را وارد کنید" className="mb-2"/>
-      </Form.Group>
+        <Row className=" d-flex align-items-center justify-content-center mt-5" >
+          <Col lg={6} className="">
 
-      <Form.Group controlId="formBasicEmail">
-        <Form.Label className="lab">ایمیل</Form.Label>
-        <Form.Control type="email" placeholder="ایمیل را وارد کنید" className="mb-2"/>
-      </Form.Group>
+            <Form
+              dir="rtl"
+              className="myForm"
+              border="primary"
+              onSubmit={sendEmail}
+            >
+              <Form.Group className="mb-3" controlId="formName">
+                <Form.Label className="lab">نام</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="نام خود را وارد کنید."
+                  name="email_from"
+                />
+              </Form.Group>
 
-      <Form.Group controlId="formBasicMessage">
-        <Form.Label className="lab mb-0.4" >پیام</Form.Label >
-        <Form.Control as="textarea" rows={3} placeholder="پیام خود را  ذکر کنید"/>
-      </Form.Group>
+              <Form.Group className="mb-3" controlId="formEmail">
+                <Form.Label className="lab">ایمیل</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="ایمیل تان را وارد کنید."
+                  name="user_email"
+                />
 
-      <Button variant="primary" type="submit" className=" mt-4">
-        ارسال پیام
-      </Button>
-    </Form>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formTextarea">
+                <Form.Label className="lab">پیام شما</Form.Label>
+                <Form.Control as="textarea" rows={3} name="message" placeholder="پیام خود را اینجا وارد کنید." className="place" />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                ارسال
+              </Button>
+            </Form>
 
-                    </Col>
+          </Col>
 
-                    <Col lg={6} sm={4}>
-                        <LoadScript googleMapsApiKey="AIzaSyAzmNed5c68CpV7E2ioGhDXJUhaAbEiX1g">
-                            <GoogleMap
-                                mapContainerStyle={mapStyles}
-                                zoom={10}
-                                center={defaultCenter}
-                            >
-                                <Marker position={defaultCenter} />
-                            </GoogleMap>
-                        </LoadScript>
 
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    )
+          <Col lg={6} sm={4}>
+            <LoadScript googleMapsApiKey="AIzaSyAzmNed5c68CpV7E2ioGhDXJUhaAbEiX1g">
+              <GoogleMap
+                mapContainerStyle={mapStyles}
+                zoom={5}
+                center={defaultCenter}
+              >
+                <Marker position={defaultCenter} />
+              </GoogleMap>
+            </LoadScript>
+
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  )
 }
 export default ContactUs
 

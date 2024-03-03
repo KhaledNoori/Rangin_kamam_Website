@@ -1,35 +1,51 @@
-.navbar-shadow {
+/* .navbar-shadow {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  } */
+@font-face {
+  font-family: "Vazir";
+  src: url("/public/assets/fonts/Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("/public/assets/fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("/public/assets/fonts/Vazir.woff2") format("woff2"),
+    url("/public/assets/fonts/Vazir.woff") format("woff"),
+    url("/public/assets/fonts/Vazir.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+.navbar {
+  height: 15vh;
+  width: 100%;
+  background-image: linear-gradient(254deg, #0072ff, #00c6ff);
+  position: fixed;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.link {
+  color: whitesmoke !important;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transition: all 500ms ease-out;
+  font-family: "Vazir";
+  font-weight: bold;
+}
+
+.link:hover {
+  color: burlywood !important;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transition: all 500ms ease-out;
+
+}
+
+@media only screen and (max-width: 540px) {
+
+  .link {
+    color: black !important;
+
+    transition: none;
   }
-  
+
   .navbar {
-    height: 12vh;
-    width: 100%;
-    background-image: linear-gradient(254deg, #0072ff, #00c6ff);
+
     position: fixed;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
   }
-
-  
-  @media (max-width: 991px) {
-    .navbar {
-        background-image: linear-gradient(254deg, #0072ff, #00c6ff);
-       
-    }
-  }
-
-x
-  .link:hover {
-    color: whitesmoke !important;
-    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-    transition: all 500ms ease-out;
-  }
-
-  @media only screen and (max-width: 540px) {
-    .link:hover{
-      color: rgb(245, 7, 7) !important;
-    
-      transition: none;
-    }
-    }
+}

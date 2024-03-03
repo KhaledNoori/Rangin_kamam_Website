@@ -1,4 +1,4 @@
-.About{
+.About {
 
     background-image: url('/public/assets/images/about/background.jpg');
     background-attachment: fixed;
@@ -7,27 +7,28 @@
     width: 100%;
 }
 
- .About .cardt{
-border-top: 4px solid #0d6efd;
-border-bottom: 4px solid #0d6efd;
-padding: 30px;
-border-radius: 0.25rem;
-width: 100%;
- background: rgba(255, 255, 255, 0.06);
- box-shadow: 0 0 24px 0 rgb(0 0 0 /12%);
+.About .cardt {
+    border-top: 4px solid #0d6efd;
+    border-bottom: 4px solid #0d6efd;
+    padding: 30px;
+    border-radius: 0.25rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 24px 0 rgb(0 0 0 /12%);
 }
-.About .cardt p{
- font-size: 25px ;
- font-family:  Verdana, Geneva, Tahoma,  sans-serif;
- line-height: 36.5px;
+
+.About .cardt p {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 36.5px;
 }
 
 
-.img{
+.img {
 
     height: 380px;
     width: 90%;
-  
+
     border-radius: 10px;
-    
+
 }
